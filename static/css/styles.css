@@ -7,7 +7,8 @@
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -68,6 +69,11 @@ a {
     verdana;
   font-size: 17px;
   color: white;
+}
+
+.footer {
+  height: 40px;
+  background-image: url("/images/alja.jpg");
 }
 
 .alja {
