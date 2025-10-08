@@ -1,0 +1,24 @@
+<tr>
+  <td style="background-color: black">
+    <table class="menu" style="width: 100%">
+      <tr>
+        <td>
+          {{ range .Site.Menus.main }} {{ if not (eq .Weight 0) }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ if not (eq .Weight 3) }}
+          <img src="/images/separ.jpg" style="height: 19px" />
+          {{ end }} {{ end }} {{ end }}
+        </td>
+
+        <td style="text-align: right">
+          <a href="http://www.forestpress.hu/hu/index.php" target="_blank"
+            >Forestpress</a
+          >
+          <img src="/images/separ.jpg" style="height: 19px" />
+          <a href="http://www.vadaszat.net" target="_blank">Nimród</a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+

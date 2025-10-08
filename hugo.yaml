@@ -1,0 +1,33 @@
+baseURL: "https://szarvaspongrac.hu"
+languageCode: "hu"
+title: "Szarvas Pongrác - Grafikus, Festő, Illusztrátor"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allow raw HTML in content
+
+params:
+  description: "Szarvas Pongrác grafikus, festő, illusztrátor honlapja"
+  author: "Szarvas Pongrác"
+
+menu:
+  main:
+    - name: "Nyitólap"
+      url: "/"
+      weight: 1
+    - name: "Életrajz"
+      url: "/eletrajz/"
+      weight: 2
+    - name: "Képzőművészet"
+      url: "/kepzomuveszet/"
+      weight: 3
+    - name: "Fotók"
+      url: "/fotok/"
+      weight: 0
+    - name: "Ismeretterjesztés"
+      url: "/ismeretterjesztes/"
+      weight: 0
+    - name: "Család"
+      url: "/csalad/"
+      weight: 0

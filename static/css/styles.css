@@ -1,0 +1,147 @@
+/* body { */
+/*   margin: 0; */
+/*   padding: 0; */
+/*   background-image: url("/images/ferde.bmp"); */
+/*   background-repeat: repeat; */
+/* } */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 100px;
+  width: 1300px;
+  background-image: url("/images/lececske.jpg");
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:active {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.cim {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 29px;
+  color: #b7b459;
+  font-weight: bold;
+}
+
+.halovany {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 19px;
+  color: #838a7c;
+}
+
+.sarok {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 14px;
+  color: #b7b459;
+}
+
+.megn {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 11px;
+  color: #838a7c;
+}
+
+.menu {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 17px;
+  color: white;
+}
+
+.alja {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 12px;
+  color: #3b4838;
+}
+
+body {
+  background-color: #435532;
+  background-attachment: fixed;
+  background-image: url("/images/ferde.bmp");
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+.leceske {
+  height: 100px;
+  width: 1300px;
+  background-image: url("/images/lececske.jpg");
+}
+
+/* Content area background */
+.content-area {
+  background-color: #435532;
+  background-attachment: fixed;
+  background-image: url("/images/font.jpg");
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #b7b459;
+}
+a:visited {
+  color: #b7b459;
+}
+a:active {
+  color: #b7b459;
+}
+a {
+  text-decoration: none;
+}
+
+.lapcim {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 19px;
+  color: #b7b459;
+}
+
+.szoveg {
+  font-family:
+    Times New Roman,
+    verdana;
+  text-align: justify;
+  text-indent: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.szovegb {
+  font-family:
+    Times New Roman,
+    verdana;
+  text-align: justify;
+  text-indent: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #838a7c;
+}
