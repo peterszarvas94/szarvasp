@@ -1,34 +1,52 @@
+body {
+  background-color: #435532;
+  background-attachment: fixed;
+  background-image: url(font.jpg);
+  background-repeat: repeat-x;
+  background-position: top left;
+}
+a {
+  text-decoration: none;
+}
 
-body
-{ background-color: 435532;
-background-attachment: fixed;  
-background-image: url(font.jpg);
-background-repeat: repeat-x;
-background-position: top left;}
-a {text-decoration: none;}
+a:link {
+  color: #b7b459;
+}
+a:visited {
+  color: #b7b459;
+}
+a:active {
+  color: #b7b459;
+}
+a {
+  text-decoration: none;
+}
 
-a:link    { color: B7B459; }
-a:visited { color: B7B459; }
-a:active  { color: B7B459; }
-a {text-decoration: none;}
+.lapcim {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 19px;
+  color: #B7B459;
+}
 
+.szoveg {
+  font-family:
+    Times New Roman,
+    verdana;
+  text-align: justify;
+  text-indent: 15px;
+  font-size: 15px;
+  color: white;
+}
 
-.lapcim
-{font-family:Times New Roman, verdana;
-font-size:19;
-color:B7B459;}
-
-.szoveg
-{font-family:Times New Roman, verdana;
-text-align:justify;
-text-indent: 15;
-font-size:15;
-color:white;}
-
-.szovegb
-{font-family:Times New Roman, verdana;
-text-align:justify;
-text-indent: 15;
-font-weight: bold;
-font-size:15;
-color:838A7C;}
+.szovegb {
+  font-family:
+    Times New Roman,
+    verdana;
+  text-align: justify;
+  text-indent: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #838a7c;
+}
