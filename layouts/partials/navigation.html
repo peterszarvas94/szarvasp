@@ -1,24 +1,39 @@
-<tr>
-  <td style="background-color: black">
-    <table class="menu" style="width: 100%">
-      <tr>
-        <td>
-          {{ range .Site.Menus.main }} {{ if not (eq .Weight 0) }}
-          <a href="{{ .URL }}">{{ .Name }}</a>
-          {{ if not (eq .Weight 3) }}
-          <img src="/images/separ.jpg" style="height: 19px" />
-          {{ end }} {{ end }} {{ end }}
-        </td>
+<nav class="desktop">
+  <ul>
+    {{ range .Site.Menus.main }} {{ if not .Params.Hidden }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ if not .Params.Last }}
+    <li>{{ partial "separator.html" }}</li>
+    {{ end }} {{ end }} {{ end }}
+  </ul>
 
-        <td style="text-align: right">
-          <a href="http://www.forestpress.hu/hu/index.php" target="_blank"
-            >Forestpress</a
-          >
-          <img src="/images/separ.jpg" style="height: 19px" />
-          <a href="http://www.vadaszat.net" target="_blank">Nimród</a>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+  <ul>
+    <li>
+      <a href="http://www.forestpress.hu/hu/index.php" target="_blank">
+        Forestpress
+      </a>
+    </li>
+    <li>{{ partial "separator.html" }}</li>
+    <li><a href="http://www.vadaszat.net" target="_blank">Nimród</a></li>
+  </ul>
+</nav>
 
+<nav class="mobile">
+  <details>
+    <summary>Menü</summary>
+
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"> {{ .Name }} </a>
+      </li>
+      {{ end }}
+      <li>
+        <a href="http://www.forestpress.hu/hu/index.php" target="_blank">
+          Forestpress
+        </a>
+      </li>
+      <li><a href="http://www.vadaszat.net" target="_blank">Nimród</a></li>
+    </ul>
+  </details>
+</nav>

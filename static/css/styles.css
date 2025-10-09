@@ -1,33 +1,195 @@
-/* body { */
-/*   margin: 0; */
-/*   padding: 0; */
-/*   background-image: url("/images/ferde.bmp"); */
-/*   background-repeat: repeat; */
-/* } */
+body {
+  background-color: #435532;
+  background-attachment: fixed;
+  background-image: url("/images/ferde.bmp");
+  background-repeat: repeat;
+  background-position: top left;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: calc(100vh - 11rem);
+  padding: 1rem;
+
+  background-color: #435532;
+  background-attachment: fixed;
+  background-image: url("/images/font.jpg");
+  background-repeat: repeat-x;
+  background-position: top left;
 }
 
-.container {
-  height: 100px;
-  width: 1300px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 0 1rem 0 1rem;
   background-image: url("/images/lececske.jpg");
+
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+    height: 8rem;
+    padding: 1rem 1rem;
+
+    a[href="/"] {
+      align-self: flex-start;
+    }
+  }
 }
 
-a:link {
-  color: white;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  @media only screen and (max-width: 450px) {
+    align-self: flex-end;
+  }
 }
-a:visited {
-  color: white;
+
+.contact {
+  display: flex;
+  gap: 0.3rem;
 }
+
+a,
+a:link,
+a:visited,
 a:active {
-  color: white;
-}
-a {
+  color: #b7b459;
+  color: #b7b459;
   text-decoration: none;
+}
+
+nav {
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 1.05rem;
+  color: white;
+  background-color: black;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+nav.desktop {
+  display: flex;
+  @media only screen and (max-width: 450px) {
+    display: none;
+  }
+
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  height: 2rem;
+
+  img {
+    height: 1.5rem;
+    padding-bottom: 0.3rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+nav.mobile {
+  display: none;
+  @media only screen and (max-width: 450px) {
+    display: block;
+  }
+
+  flex-direction: column;
+  padding: 0.5rem 0;
+
+  details {
+    color: #b7b459;
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary {
+      cursor: pointer;
+      text-align: center;
+      list-style: none;
+    }
+    &[open] {
+      summary {
+        text-decoration: underline dotted white;
+        text-decoration-thickness: 0.2rem;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.welcome {
+  img {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+article.eletrajz {
+  p {
+    text-indent: 0;
+  }
+  ul {
+    list-style: square;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 0 1rem 0;
+  @media only screen and (max-width: 300px) {
+    padding: 0 0 1rem 0;
+  }
+
+  div {
+    background-color: #324026;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  img {
+    max-height: 300px;
+    max-width: 300px;
+
+    @media only screen and (max-width: 300px) {
+      width: 100%;
+    }
+  }
 }
 
 .cim {
@@ -63,35 +225,6 @@ a {
   color: #838a7c;
 }
 
-.menu {
-  font-family:
-    Times New Roman,
-    verdana;
-  font-size: 17px;
-  color: white;
-}
-
-.footer {
-  height: 40px;
-  background-image: url("/images/alja.jpg");
-}
-
-.alja {
-  font-family:
-    Times New Roman,
-    verdana;
-  font-size: 12px;
-  color: #3b4838;
-}
-
-body {
-  background-color: #435532;
-  background-attachment: fixed;
-  background-image: url("/images/ferde.bmp");
-  background-repeat: repeat;
-  background-position: top left;
-}
-
 .leceske {
   height: 100px;
   width: 1300px;
@@ -105,22 +238,6 @@ body {
   background-image: url("/images/font.jpg");
   background-repeat: repeat-x;
   background-position: top left;
-}
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: #b7b459;
-}
-a:visited {
-  color: #b7b459;
-}
-a:active {
-  color: #b7b459;
-}
-a {
-  text-decoration: none;
 }
 
 .lapcim {
@@ -136,8 +253,7 @@ a {
     Times New Roman,
     verdana;
   text-align: justify;
-  text-indent: 15px;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: white;
 }
 
@@ -150,4 +266,17 @@ a {
   font-weight: bold;
   font-size: 15px;
   color: #838a7c;
+}
+
+footer {
+  background-image: url("/images/alja.jpg");
+  font-family:
+    Times New Roman,
+    verdana;
+  font-size: 1rem;
+  color: #3b4838;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
